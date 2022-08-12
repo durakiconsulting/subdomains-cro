@@ -23,7 +23,7 @@ This project is mainained by [durakiconsulting](https://github.com/durakiconsult
 
 - [ ] Gather all interesting subdomain and DNS wordlists in one place (SecList, Jihadx, etc.)
 - [ ] Use Translating Engine (ie. Google Translate) to Translate words from `EN` -> `CRO` from default wordlists
-- [ ] Use [crt.sh](https://crt.sh) in combination with .BA/.HR/.RS DNS Zone List (from [nettis]())
+- [ ] Use [crt.sh](https://crt.sh) in combination with .BA/.HR/.RS DNS Zone List (from [nettis](https://github.com/durakiconsulting/nettis))
 - [ ] Store all cert/transparency discovered subdomains to a new list
 - [ ] Use [gorilla](https://github.com/d4rckh/gorilla) & [cook](https://github.com/giteshnxtlvl/cook) to permutate subdomain words
 - [ ] Final compilation of all unique/translated/fabricated subdomain words
