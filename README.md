@@ -9,9 +9,9 @@
 This is a repostiory containing subdomain enumeration wordlists used in Penetration Testing engagements, that is compiled for Bosnian/Croatian/Serbian language.
 
 Authors:
-	* [0xduraki](https://github.com/duraki/) (Halis D.)
-	* [captcha-n00b](https://github.com/captcha-n00b/) (Danijel V.)
-	* [DarkoMilanov](https://github.com/DarkoMilanov/) (Darko M.)
+* [0xduraki](https://github.com/duraki/) (Halis D.)  
+* [captcha-n00b](https://github.com/captcha-n00b/) (Danijel V.)  
+* [DarkoMilanov](https://github.com/DarkoMilanov/) (Darko M.)  
 
 ## Description
 
@@ -53,9 +53,7 @@ git clone --depth 1 \
   https://github.com/durakiconsulting/subdomains-cro.git
 ```
 
-### See Also
-
-See CONTRIBUTORS.md
+## See Also
 
 ### Contributing
 
