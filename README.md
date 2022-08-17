@@ -53,6 +53,27 @@ git clone --depth 1 \
   https://github.com/durakiconsulting/subdomains-cro.git
 ```
 
+### Building
+
+You will need a zonelist of prefered choice for specific ccTLD. This is not provided in the repository. Upon gathering an sqlite3 database of zonelist, you need to execute the following commands:
+
+```
+$ ./scripts/ba-domains_extract.sh     # => this will extract `url` column from `domains` table of the sqlite database
+ba-domains_extract.sh successfully extracted
+output is (bytes+lines): szone/cctld-ba_nett.txt
+  657060 subdomains-cro/scripts/../szone/cctld-ba_nett.txt
+   10951 subdomains-cro/scripts/../szone/cctld-ba_nett.txt
+
+$ ruby scripts/ba-domains_clean.rb    # => this uses previously extracted `url`-set to compile a newly clean cctld list
+...
+input is (szone/cctld-ba_nett.txt) => output is (szone/clean_cctld-ba_nett.txt)
+total lines to process ... ~(10951)
+domain (058.ba) in progress ... no_unknw
+...
+Total Results ... clean count ... ~(9435)
+Writing new results to output
+```
+
 ## See Also
 
 ### Contributing
@@ -65,6 +86,7 @@ See CONTRIBUTING.md
 * [giteshnxtlvl/cook](https://github.com/giteshnxtlvl/cook)
 * [fuzzdb-project/fuzzdb](https://github.com/fuzzdb-project/fuzzdb)
 * [assetonote wordlists](https://wordlists.assetnote.io/)
+* [archivesuburls](https://github.com/osamahamad/archivesuburls)
 
 ### License
 
