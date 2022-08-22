@@ -86,15 +86,13 @@ The extraction is combined of several factors.
 
 #### Translations
 
-**Google Translate**
-
 **todo:** ... what else?
 
 #### Certificate Transparency
 
-**Certificate Transparency Logs**
-
 This repository includes a [script](/scripts/psql_crtsh.rb) called `psql_crtsh`, written in Ruby, used to somehow make sense of collected "clean" szone ccTLD list (*see above*). This list contains ~20k (yes, a thousands) `*.ba` (hostnames). The idea was to do both a quick scan and deep-scan, that stores hostname for another recon process. 
+
+![](/docs/crtsh.png)
 
 Setup a logging interface first, for an ease in greping and pattern matching. Here is the author's preference:
 
@@ -197,7 +195,7 @@ SELECT distinct(lower(name_value)) FROM certificate_and_identities cai WHERE pla
 Just showing-off for some reason? Build your preliminary subdomains.
 
 ```
-$ ruby scripts/psql_crtsh.rb --build
+$ ruby scripts/psql_crtsh.rb --build # => to build clean subdomains
 
 # building final subdomain list from the `psql_crtsh` flow
     ... sorting subdomain(s) to szone/
@@ -206,9 +204,13 @@ $ ruby scripts/psql_crtsh.rb --build
 [dbg] build completed. all done
    11434 $HOME/subdomains-cro/scripts/../szone/clean_subdomains.crtsh.txt
 
-
 # => meaning total uniq subdomains: **11434**. bingo!
 #    szone/clean_subdomains.crtsh.txt
+
+---
+
+$ ruby scripts/psql_crtsh.rb --build-hostnames # => to build clean hostnames
+#    szone/clean_hostname-w_subdomains.crtsh.txt
 ```
 
 Log and result files are also present in the final build:
