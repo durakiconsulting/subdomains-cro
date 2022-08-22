@@ -1,3 +1,6 @@
 .DS_Store
 szone/*
 storage.sqlite3
+_*.txt
+scripts/ctrsh.ix
+docs/debug.log
