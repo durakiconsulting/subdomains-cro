@@ -13,6 +13,8 @@ Authors:
 * [captcha-n00b](https://github.com/captcha-n00b/) (Danijel V.)  
 * [DarkoMilanov](https://github.com/DarkoMilanov/) (Darko M.)  
 
+Read more about this project in [Contributing](/CONTRIBUTING.md), [Enumeration Techniques](/TECHNIQUES.md), and [Machine Learning via RNN/NLP](/ML-TECHNIQUES.md).
+
 ## Description
 
 `subdomains-cro` is the security tester's companion. It's a collection of a subdomain lists used during security assessments, collected in one place, prototyped and translted to Yugoslavian langauges. List type incluides typical network, username, sensitive design patterns, fuzzing payloads and many more to easily enumerate and recon potential Yugoslavian subdomains. Can be used with: [gobuster](https://github.com/OJ/gobuster), [amass](https://github.com/OWASP/Amass), [sublist3r](https://github.com/aboul3la/Sublist3r) and many others.
